@@ -124,7 +124,7 @@ services:
       stdin_open: true
       tty: true
       working_dir: /usr/src/app
-      command: python
+      command: ["python","miscript.py"]
 ~~~
 
 Usamos los comandos:
@@ -172,7 +172,7 @@ services:
       stdin_open: true
       tty: true
       working_dir: /usr/src/app
-      command: python
+      command: ["python","miscript.py"]
 ~~~
 
 ### Comprobación del funcionamiento
