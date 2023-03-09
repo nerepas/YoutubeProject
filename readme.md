@@ -20,12 +20,14 @@ Y al escribir "import pytube" no nos mostrará ningún error. Con esto, comproba
 
 ## Descarga de video con Pytube
 
+*Posteriormente se hará lo mismo con un video personalizado!!*
+
 En el archivo main.py escribimos el siguiente código:
 
 ~~~
 from pytube import YouTube
 
-yt = YouTube("https://www.youtube.com/watch?v=N-EDytnFmgI")
+yt = YouTube("https://www.youtube.com/watch?v=aFqTjk3kcEw&ab_channel=Garajedeideas")
 
 #Title of video
 print("Title: ",yt.title)
@@ -48,6 +50,7 @@ Ejecutamos el main.py y al abrir la carpeta donde está guardado el proyecto pod
 Con la imagen de python3 descargada previamente, creamos el fichero docker-compose.yml.
 
 *Si no se tiene la imagen descargada usar el comando: docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:3 python hola.py*
+
 *El fichero hola.py contiene el texto: print(“Hola mundo”)*
 
 Contenido de docker-compose.yml:
